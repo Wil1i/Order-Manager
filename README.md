@@ -1,7 +1,7 @@
 # Order Manager Website
 
 Just clone it, create a copy from `configs/config.json.sample` to `configs/config.json` and fill out the requirements.\
-Don't forget to use `npm` commands for installing libraries.
+Don't forget to use `npm i` command for installing libraries.
 
 ## Requirements:
 * [Node.JS](https://nodejs.org/en/download/package-manager)
