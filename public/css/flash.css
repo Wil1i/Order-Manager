@@ -1,0 +1,15 @@
+.flash{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--main);
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+.f-error{
+    background-color: var(--bg-red) !important;
+    color: red !important;
+    border: .11rem solid red;
+}

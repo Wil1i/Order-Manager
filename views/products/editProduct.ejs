@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/editProduct.css">
+
+<div id="edit-side">
+    <form class="edit-container" method="post" action="/orders/<%=product.id%>?action=edit">
+
+        <div class="edit-inputs-section">
+            <div>
+                <p>نام سفارش:</p>
+                <input type="text" dir="ltr" name="title" value="<%=product.title%>" placeholder="نام سفارش" required>
+            </div>
+
+            <div>
+                <p>شماره تماس:</p>
+                <input type="text" dir="ltr" name="phone" value="<%=product.phone%>" placeholder="شماره تماس" required>
+            </div>
+
+            <div>
+                <p>سفارش دهنده:</p>
+                <input type="text" dir="ltr" name="name" value="<%=product.name%>" placeholder="سفارش دهنده" required>
+            </div>
+
+            <div>
+                <p>قیمت:</p>
+                <div>
+                    <input placeholder="قیمت" dir="ltr" name="price" type="number" value="<%=product.price%>" required>
+                    <select name="status" required>
+                        <option <%= product.status == "در انتظار پرداخت" && 'selected' %> value="در انتظار پرداخت">در انتظار پرداخت</option>
+                        <option <%= product.status == "پرداخت شده" && 'selected' %> value="پرداخت شده">پرداخت شده</option>
+                        <option <%= product.status == "در حال ساخت" && 'selected' %> value="در حال ساخت">در حال ساخت</option>
+                        <option <%= product.status == "ارسال شده" && 'selected' %> value="ارسال شده">ارسال شده</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="edit-button-section">
+            <button id="editSaveButton" type="submit">ذخیره</button>
+            <button id="editCloseButton" type="reset">انصراف</button>
+        </div>
+    </form>
+</div>

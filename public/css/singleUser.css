@@ -1,0 +1,116 @@
+.user-container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.user-container > div{
+    margin: 0 20px;
+}
+
+.user-left img {
+    width: 200px;
+}
+
+.user-author > svg{
+    width: 16px;
+    margin-right: 5px;
+    /* margin-top: -5px; */
+}
+
+.user-author{
+    background-color: rgb(235, 235, 235);
+    color: rgb(155, 155, 155);
+    float: left;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+.user-name{
+    margin-bottom: 10px;
+}
+
+.user-info{
+    display: flex;
+}
+
+.user-info > p{
+    background-color: var(--main);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.user-info > p > a{
+    color: white;
+    padding: 0 10px;
+    transition: color .2s ease-in-out;
+}
+
+.user-info > p > a:hover{
+    color: rgb(233, 213, 252);
+}
+
+.btn-delete{
+    background-color: var(--bg-red) !important;
+    transition: background-color .2s ease-in-out;
+}
+
+.btn-delete > a{
+    color: red !important;
+    transition: color .2s ease-in-out;
+}
+
+.btn-delete:hover{
+    background-color: red !important;
+}
+
+.btn-delete:hover > a{
+    color: white !important;
+}
+
+.user-info-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 22vh;
+}
+
+.user-info > input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--main);
+    color: var(--main);
+    outline: none;
+}
+
+.user-info > select{
+    border: 2px solid var(--main);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    color: var(--main)
+}
+
+.user-info > button{
+    background-color: var(--main);
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70px;
+}
+
+.user-profile{
+    width: 150px;
+    color: var(--main);
+}

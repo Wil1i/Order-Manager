@@ -1,0 +1,13 @@
+{
+    "port" : PORT,
+    "secret" : "SECRET",
+    "adminUsername" : "ADMIN_USERNAME",
+    "adminPassword" : "ADMIN_PASSWORD",
+    "db" : {
+        "username" : "USERNAME",
+        "password" : "PASSWORD",
+        "name" : "NAME",
+        "host" : "HOST",
+        "dialect" : "DIALECT" 
+    },
+}

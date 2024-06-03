@@ -1,0 +1,159 @@
+.product-container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.product-container > div{
+    margin: 0 20px;
+}
+
+.product-left img {
+    width: 200px;
+}
+
+.product-left{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.product-left > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.product-author > svg{
+    width: 16px;
+    margin-right: 5px;
+    /* margin-top: -5px; */
+}
+
+.product-author{
+    background-color: rgb(235, 235, 235);
+    color: rgb(155, 155, 155);
+    float: left;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.product-name{
+    margin-bottom: 10px;
+}
+
+.product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-info > p{
+    background-color: var(--main);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.product-info > p > a{
+    color: white;
+    padding: 0 10px;
+    transition: color .2s ease-in-out;
+}
+
+.product-info > p > a:hover{
+    color: rgb(233, 213, 252);
+}
+
+.btn-delete{
+    background-color: var(--bg-red) !important;
+    transition: background-color .2s ease-in-out;
+}
+
+.btn-delete > a{
+    color: red !important;
+    transition: color .2s ease-in-out;
+}
+
+.btn-delete:hover{
+    background-color: red !important;
+}
+
+.btn-delete:hover > a{
+    color: white !important;
+}
+
+.product-info-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 22vh;
+}
+
+.product-info > input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--main);
+    color: var(--main);
+    outline: none;
+}
+
+.product-info > select{
+    border: 2px solid var(--main);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    color: var(--main)
+}
+
+.product-info > button{
+    background-color: var(--main);
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70px;
+}
+
+.product-info > p > small{
+    color: var(--gray);
+}
+
+.svg-fix{
+    display: flex;
+    justify-content: center;
+}
+
+.svg-fix > a > svg{
+    width: 20px;
+    color: red;
+}
+
+.svg-fix > a{
+    background-color: var(--bg-red);
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.product-inf > svg{
+    margin-right: 0 !important;
+    margin-left: 5px !important;
+}
+
+.product-inf2{
+    flex-wrap: wrap;
+}

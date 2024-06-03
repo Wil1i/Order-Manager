@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+	<head>
+		<%- include("../templates/head.ejs", {css : "newProduct.css"}) %>
+	</head>
+	<body>
+		<div class="sideBar-container">
+			<%- include("../templates/sideBar.ejs", {active : "newProduct"}) %>
+			<%- include("../templates/flash.ejs") %>
+		</div>
+		<div class="body-container">
+			<form action="/orders/new" method="post" class="newProduct-form">
+				<div>
+					<p class="title">افزدون محصول</p>
+				</div>
+				<div class="inputs-product"> <!-- For Inputs -->
+					<input placeholder="اسم سفارش" name="title" type="text" required>
+					<input type="text" placeholder="نام سفارش دهنده" name="name" required>
+					<input type="text" name="number" placeholder="شماره تماس">
+					<div class="priceDifference">
+						<input placeholder="قیمت" dir="ltr" name="price" type="number" required>
+						<select name="status" required>
+							<option value="در انتظار پرداخت">در انتظار پرداخت</option>
+							<option value="پرداخت شده">پرداخت شده</option>
+							<option value="در حال ساخت">در حال ساخت</option>
+							<option value="ارسال شده">ارسال شده</option>
+						</select>
+					</div>
+				</div>
+				<div> <!-- For submit button -->
+					<button type="submit">افزودن</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

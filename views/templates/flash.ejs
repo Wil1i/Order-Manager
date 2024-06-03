@@ -1,0 +1,7 @@
+<% for(const key in flash){ %>
+
+    <span role="alert" class="flash f-<%=key%>">
+      <%= flash[key] %>
+    </span>
+  
+<% } %>

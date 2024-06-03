@@ -1,0 +1,93 @@
+.inputs-product,
+.inputs-dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.body-container > form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    box-shadow: 0 0 10px 1px var(--shadow);
+}
+
+.inputs-product > input:placeholder-shown{
+    direction: rtl;
+}
+
+.inputs-dev > input:placeholder-shown{
+    direction: ltr !important;
+}
+
+.inputs-product,
+.inputs-dev{
+    width: 100%;
+}
+
+input{
+    width: 80%;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid var(--main);
+    transition: all .2s ease-in-out;
+}
+
+input:focus{
+    background-color: var(--main);
+    color: white;
+}
+
+select{
+    background-color: var(--main);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+}
+
+button[type=submit]{
+    background-color: white;
+    border: 1px solid var(--main);
+    color: var(--main);
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--main);
+    color: white;
+}
+
+.priceDifference{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceDifference > input{
+    text-align: center;
+}

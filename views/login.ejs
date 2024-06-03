@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <%- include("./templates/head.ejs", {css : "login.css"}) %>
+</head>
+<body>
+    <%- include("./templates/flash.ejs") %>
+    <form action="/login" method="post" >
+        <h1>ورود</h1>
+        <div>
+            <input type="text" name="username" placeholder="نام کاربری" dir="ltr">
+            <input type="password" name="password" placeholder="کلمه عبور" dir="ltr">
+        </div>
+        <button type="submit">ورود</button>
+    </form>
+</body>
+</html>
