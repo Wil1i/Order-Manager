@@ -5,7 +5,7 @@ const pwd = require("./password")
 const checkUser = async () => {
     const users = await User.findAll()
     if(!users || !users[0]){
-        const password = pwd.encrypt(config.adminPassword)
+        const password = await pwd.encrypt(config.adminPassword)
         await User.create({
             username : config.adminUsername,
             password,
