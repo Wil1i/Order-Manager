@@ -1,5 +1,6 @@
 {
     "port" : PORT,
+    "apiKey" : "API_KEY",
     "secret" : "SECRET",
     "adminUsername" : "ADMIN_USERNAME",
     "adminPassword" : "ADMIN_PASSWORD",

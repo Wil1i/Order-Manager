@@ -3,6 +3,7 @@ const config = require("../configs/config.json")
 const pwd = require("./password")
 
 const checkUser = async () => {
+    await User.sync()
     const users = await User.findAll()
     if(!users || !users[0]){
         const password = await pwd.encrypt(config.adminPassword)

@@ -1,6 +1,7 @@
 const Product = require("../../models/Product")
 const config = require("../../configs/config.json")
 const convert = require("../../utils/convert")
+const kavenegar = require("../../utils/kaveNegar")
 
 const get = (req, res) => {
 	res.render("products/newProduct", {
@@ -19,6 +20,8 @@ const post = async (req, res) => {
     })
 
     req.flash("success", "سفارش جدید با موفقیت ساخته شد.")
+
+    await kavenegar.sms(req.body.number, "submitOrder", req.body.name, "")
 
     return res.redirect("/orders")
 }

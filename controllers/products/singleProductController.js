@@ -1,8 +1,6 @@
 const Product = require("../../models/Product")
-const Setting = require("../../models/Setting")
 const convert = require("../../utils/convert")
-const axios = require("axios")
-const config = require("../../configs/config.json")
+const kaveNegar = require("../../utils/kaveNegar")
 
 const get = async (req, res) => {
     const findProduct = await Product.findByPk(req.params.id)
@@ -34,6 +32,8 @@ const post = async (req, res) => {
         req.flash("error", "محصول مورد نظر یافت نشد.")
         return res.redirect("/orders")
     }
+
+    if(findProduct.status != req.body.status) await kaveNegar.sms(findProduct.phone, "order", findProduct.name, req.body.status)
 
     await findProduct.update({
         title : req.body.title,
